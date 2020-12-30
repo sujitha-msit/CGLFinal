@@ -268,9 +268,9 @@ public class UserInterface {
 	private void loadImageData() {
 		int dimensions=0;
 		try {
-			dimensions=80;
+			dimensions=80;//specifying the dimensions of the board.
 			// Your code goes here......
-				oddGameBoard=new Board(str_FileName,dimensions);
+				oddGameBoard=new Board(str_FileName,dimensions);//creating a board for the game with the livecell being taken from the filename and with given dimensions.
 						}
 		catch (Exception e)  {
 			// Since we have already done this check, this exception should never happen
@@ -316,11 +316,11 @@ public class UserInterface {
 		// Use the toggle to flip back and forth between the current generation and next generation boards.
 		
 		// Your code goes here...
-		window.getChildren().remove(evenCanvas);
-		oddGameBoard.generateBoard();
-		evenCanvas=new Pane();
-		oddGameBoard.fillgraphics(evenCanvas);
-		window.getChildren().add(evenCanvas);
+		window.getChildren().remove(evenCanvas);//Removing the previous generation output.
+		oddGameBoard.generateBoard();//Generating the next generation board.
+		evenCanvas=new Pane();// Creating a new Pane;
+		oddGameBoard.fillgraphics(evenCanvas);//This method displays the output.
+		window.getChildren().add(evenCanvas);//This we are adding to the parent Pane
 		
 	}
 

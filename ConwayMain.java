@@ -13,9 +13,10 @@ import javafx.stage.Stage;
 * <p> Description: A JavaFX demonstration application: This controller class defines the board
 * so it fix on the computer's display, set up the user interface, and enables execution</p>
 * 
-* <p> Copyright: Lynn Robert Carter © 2018-05-06 </p>
+* <p> Copyright: Lynn Robert Carter © 2020-12-29 </p>
 * 
-* @author Lynn Robert Carter
+* @author Lynn Robert Carter, Sujitha J
+* @coauthor RamSantosh
 * 
 * @version 2.03	2018-05-07 An implementation baseline for JavaFX graphics
 * 
@@ -37,7 +38,7 @@ public class ConwayMain extends Application {
 		WINDOW_WIDTH = primaryScreenBounds.getWidth() - primaryScreenBounds.getMinX() - 100;
 		WINDOW_HEIGHT = primaryScreenBounds.getHeight() - primaryScreenBounds.getMinY() - 100;
 			
-		theStage.setTitle("Conway's Game of Life");				// Label the stage (a window)
+		theStage.setTitle("Sujitha's Conway's Game of Life");				// Label the stage (a window)
 		
 		Pane theRoot = new Pane();								// Create a pane within the window
 		
